@@ -14,5 +14,13 @@
       "rules": {}
     }
   ],
-  "extends": ["plugin:@nx/react"]
+  "extends": ["plugin:@nx/react", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+   "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": "off"
+  },
 }
